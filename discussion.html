@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="renderer" content="webkit">
+    <title>综合讨论</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sty-color.css">
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="ltmain">
+<div class="nav nav-blubg">
+    <div class="container nav-bcont clearfix">
+        <div class="bnav-lf lf">
+            <a href="#">官网首页</a>
+            <a href="#">产品中心</a>
+            <a href="#">解决方案</a>
+            <a href="#">成果案例</a>
+            <a href="#">产品试用</a>
+            <a href="#">BIM教育</a>
+            <a href="#">关于我们</a>
+            <a href="#">蓝图</a>
+        </div>
+        <div class="bnav-rt rt">
+            <a href="#">注册</a>
+            <span>|</span>
+            <a href="#">登录</a>
+        </div>
+    </div>
+    <div class="bnav-bot">
+        <div class="container clearfix">
+            <div class="navbar-header">
+                <a class="lf lt-logo" style="width: 149px;"></a>
+                <span class="lf nav-btle">蓝图</span>
+            </div>
+            <div class="nav-serch lf clearfix b-serch">
+                <div class="clearfix lf ">
+                    <input class="lf" type="text" placeholder="请输入搜素内容">
+                    <i class="serch-bg rt"></i>
+                </div>
+                <div class="fa-tie rt cur-opty">
+                    <input type="button" value="发帖">
+                    <i class="ftie-bg"></i>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="container clearfix" style="margin-bottom: 50px" ng-controller="saybox">
+    <div class="forum-left">
+        <div class="dis-main">
+            <ol class="breadcrumb">
+                <li><a>互动社区 </a></li>
+                <li class="active"><a>综合讨论</a></li>
+            </ol>
+            <div class="dis-title clearfix">
+                <img src="images/contact-icon1.png" class="ie8-radius">
+                <div style="overflow: hidden">
+                    <h2>有哪些公共建筑看上去是令人有距离感</h2>
+                    <div class="clearfix information">
+                        <div class="lf">
+                            <a>阿萨德</a>
+                            <span id="bdshare" class="bdshare_b">分享</span>
+                            <em>部门：产品设计部</em>
+                        </div>
+                        <ul class="rt clearfix">
+                            <li class="icon1">2016-3-16</li>
+                            <li class="icon2">8866</li>
+                            <li class="icon3">128</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p>    一般来说建筑的体量越大，越容易给人无法使用的感觉，而大型综合交通枢纽更是因为其巨大的体量和复杂的功能，很容易给使用者带来迷惑和焦虑，但上海虹桥火车站虹桥，因为优秀的交通流线的管理，和对于分层交通的合理安排，优秀的空间设计，让我认为是中国使用感最好的火车站，没有之一！
+                注意你题中所说的，那些随着场所的变换而出现不同的空间。
+                “一天早晨，格里高尔•萨姆沙从不安的睡梦中醒来，发现自己躺在床上变成了一只巨大的甲虫”
+                “Lolita, light of my life, fire of my loins.My sin,my soul, Lolita。”
+                可以小桥流水，可以平地惊雷，但不能无所作为。
+                放在建筑中，事实上，这就是你空间体验的开端。
+
+            </p>
+            <img src="images/index-banner.jpg">
+            <div class="dis-down clearfix">
+                <ul class="lf">
+                    <li>
+                        <a>建筑CAD图纸. png</a><b>(下载次数：18）</b>
+                    </li>
+                    <li>
+                        <a>土建视频资源. zip</a><b>(下载次数：18）</b>
+                    </li>
+
+                </ul>
+                <div class="rt dis-fun">
+                    <span>18</span>
+                    <i>3</i>
+                    <b>收藏</b>
+                </div>
+            </div>
+        </div>
+        <div class="reply-textarea">
+            <h3>发表评论</h3>
+            <div class="com-content" >
+                <!--<textarea class="saytext"  placeholder="您可以输入200个字符"  ng-model="reptera" maxlength="200" ng-model="message"></textarea>-->
+                <!--<div class="text-number">-->
+                    <!--<span ng-bind="left()">200</span>/200-->
+                <!--</div>-->
+                <saysome gettext="left(name)"></saysome>
+                <div class="clearfix">
+                    <i class="ie8-radius emotion"><span></span>表情</i>
+                    <input type="button"  value="回复">
+                </div>
+            </div>
+        </div>
+        <div class="dis-reply" >
+            <div class="clearfix reply-top">
+                <span>全部评论（123）</span>
+            </div>
+            <ul class="dis-reply-list" ng-repeat="x in info">
+                <li class="clearfix">
+                    <div class="dis-rep clearfix">
+                        <img src="images/contact-icon1.png" class="ie8-radius">
+                        <div style="overflow: hidden" class="clearfix">
+                            <a>{{x.name}} </a>
+                            <span>{{x.dep}}</span>
+                            <div class="rt">
+                                <em>{{x.flo}}F</em>
+                            </div>
+                            <p>{{x.rep}}</p>
+                        </div>
+                    </div>
+                    <div class="rt dis-fun ">
+                        <em ng-click="hf=true">回复</em>
+                        <span class="no-rtborder">18</span>
+                    </div>
+                    <div class="com-content" ng-style="{display:hf?'block':'none'}">
+                        <!--<textarea class="saytext" placeholder="您可以输入200个字符" ng-model="reptera" maxlength="200" ng-model="message"></textarea>-->
+                        <!--<div class="text-number">-->
+                            <!--<span ng-bind="left()">200</span>/200-->
+                        <!--</div>-->
+                        <saysome gettext="left(name)"></saysome>
+                        <div class="clearfix">
+                            <i class="ie8-radius emotion"><span></span>表情</i>
+                            <input type="button"  value="回复">
+                            <a ng-click="hf=flase">取消</a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--<div id="bdshare" class="bdshare_b"><img src="images/type-button-1.jpg" /></div>-->
+    <div class="forum-right">
+        <div class="right-hot">
+            <h1 class="main-title clearfix" style="margin-top: 10px;">
+                <i>热门板块 </i>
+            </h1>
+            <a>综合讨论</a>
+            <a style="margin-left: 6px">万霆软件</a>
+            <a>资源分享</a>
+            <a style="margin-left: 6px">需求发布</a>
+            <a>成长在万霆</a>
+            <a style="margin-left: 6px">万霆新精彩</a>
+        </div>
+        <div class="right-rec">
+            <h1 class="main-title clearfix">
+                <i>推荐阅读 </i>
+            </h1>
+            <div class="clearfix">
+                <div class="lf rec-book">
+                    <a><img src="images/book-1.jpg"></a>
+                    <span style="margin-top: 10px">《建筑教学原理》</span>
+                    <span style="color: #878787">作者：靳埭强</span>
+                </div>
+                <div class="rt rec-book">
+                    <a><img src="images/book-1.jpg"></a>
+                    <span style="margin-top: 10px">《建筑教学原理》</span>
+                    <span style="color: #878787; margin-bottom: 10px;">作者：靳埭强</span>
+                </div>
+            </div>
+
+            <a>《建筑学》赫茨博格现象学建筑的透明性</a>
+            <a>《建筑学》赫茨博格现象学建筑的透明性</a>
+            <a>《建筑学》赫茨博格现象学建筑的透明性</a>
+            <a>《建筑学》赫茨博格现象学建筑的透明性</a>
+        </div>
+        <div class="new-active">
+            <h1 class="main-title clearfix">
+                <i>最新活动</i>
+            </h1>
+            <div class="clearfix active-list">
+                <img src="images/book-1.jpg">
+                <div>
+                    <h4>筑教万里行-BIM...</h4>
+                    <p>2016年3月21日，万霆科
+                        技筑教万里行-BIM巡...</p>
+                    <a class="ie8-radius">立即参加</a>
+                </div>
+            </div>
+            <div class="clearfix active-list"  style="margin-top: 16px;">
+                <img src="images/book-1.jpg">
+                <div>
+                    <h4>筑教万里行-BIM...</h4>
+                    <p>2016年3月21日，万霆科
+                        技筑教万里行-BIM巡...</p>
+                    <a class="ie8-radius">立即参加</a>
+                </div>
+            </div>
+        </div>
+        <div class="official-WeChat">
+            <h1 class="main-title clearfix">
+                <i>官方微信</i>
+            </h1>
+            <img src="images/ewm.jpg">
+            <p>关注微信公众号</p>
+        </div>
+    </div>
+</div>
+<!-- str:footer -->
+<div class="blue-footer">
+    <div class="footer-top-line">
+        <span></span>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <h2>关于我们</h2>
+
+                    <div class="clearfix">
+                        <i></i>
+                            <span>
+                                杭州万霆科技股份有限公司<br>
+                                <em>成立于2010年</em>
+                            </span>
+                    </div>
+                    <p> 国内首家将3D虚拟交互技术应用于建筑实训教学的高新技术企业，在新型建筑专业人才培养模式的研究应用上，万霆突破了传统的建筑人...
+                    </p>
+                    <a>阅读更多 ></a>
+                </div>
+                <div class="col-xs-3">
+                    <h2>职位招聘</h2>
+                    <ul class="footer-invite">
+                        <li><i></i>招聘销售专员销售管理人员</li>
+                        <li><i></i>市场销售</li>
+                        <li><i></i>招聘销售专员销售管理人员</li>
+                        <li><i></i>营销客服经理</li>
+                        <li><i></i>市场营销</li>
+                    </ul>
+                </div>
+                <div class="col-xs-3">
+                    <h2>职位招聘</h2>
+                    <ul class="footer-way">
+                        <li class="clearfix"><i></i><span>地址 : 浙江省杭州市滨江区建业路511号
+                                浙大科技园（华业大厦）3楼</span></li>
+                        <li class="clearfix"><i></i>电话Tel：(86) 571+81107024</li>
+                        <li class="clearfix"><i></i>传真Fax：(86) 571+81107023</li>
+                        <li class="clearfix"><i></i>service@v3ing.com</li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                    <h2>关注我们</h2>
+                    <img src="images/ewm.jpg" style="width: 100%;">
+                </div>
+            </div>
+            <div class="black-line" style="margin-top: 14px"></div>
+            <div class="blogroll">
+                <h4>友情链接：</h4>
+                <a>中国建设教育协会</a>
+                <a>中国建设教育协会</a>
+                <a>中国建设教育协会</a>
+                <a>中国建设教育协会</a>
+
+                <div class="black-line"></div>
+            </div>
+            <div class="footer-query">
+                <form class="form-inline">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="footerQuery">
+                                <div class="cx">查询各地服务号</div>
+                            </label>
+                            <input type="text" class="form-control footer-text" placeholder="输入搜索内容" id="footerQuery">
+                        </div>
+                        <button type="submit" class="btn btn-default footer-btn">查询</button>
+                        <div class="tel">400-826-1106</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <a href="http://www.cnzz.com/stat/website.php?web_id=1000430894" target="_blank" title="站长统计"><img
+                    src="http://icon.cnzz.com/img/pic.gif"></a>
+            &nbsp;&nbsp;Copy right ©2010-2016版权所有有权保留 HangZhou WanTing TechnologyCo.,LTD 浙ICP备11059358号-3
+        </div>
+    </div>
+</div>
+<!-- end:footer -->
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular-animate.min.js"></script>
+<script src="js/jquery1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+<script src="js/jquery.qqFace.js"></script>
+<script src="js/public.js"></script>
+<script type="text/javascript" id="bdshare_js" data="type=slide&mini=1" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    document.getElementById('bdshell_js').src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<script>
+    var app = angular.module('ltmain',[]);
+    app.controller('saybox',function($scope){
+        $scope.info = [
+            {name:"小明",dep:"产品研发部",flo:1,rep:"adssadsdajk好撒大声地将快捷方式啊"},
+            {name:"wuli波波",dep:"UED",flo:2,rep:"家看电视了法律是敬爱放辣椒分开就死定了飞机上开了房间时"}
+        ];
+        $scope.reptera = "";
+        $scope.wordwrap2 =function(name){
+            if(name.length>200){ //textarea的文本长度大于maxlength
+                name(name.substr(0,200)); //截断textarea的文本重新赋值
+            };
+            return name;
+        }
+        $scope.left  = function(name) {
+            return (200 - name.length);
+        };
+
+    });
+    app.directive("saysome",function(){
+        return {
+            restrict: 'AE',
+            scope:{
+                gettext:'&'
+            },
+            template:'<textarea class="saytext"  placeholder="您可以输入200个字符"  ng-model="reptera" ng-keyup="wordwrap2()" ></textarea>'+'<div class="text-number"><span ng-bind="gettext({name:reptera})">200</span>/200</div>'
+        }
+    })
+</script>
+<script>
+    $(function () {
+        $('input, textarea').placeholder();
+        Common.gotop();
+        Common.wordLimit( '.new-active .active-list','p',20);
+        //Common.textword();
+        $('.emotion').qqFace({
+            assign: 'saytext', //给那个控件赋值
+            path:'face/'	//表情存放的路径
+        });
+    })
+</script>
+</body>
+</html>
