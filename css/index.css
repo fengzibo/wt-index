@@ -140,9 +140,9 @@ a, a:focus {
     text-decoration: none;
 }
 
-.mulshow .second-nav {
+/*.mulshow .second-nav {
     display: block;
-}
+}*/
 
 .second-nav2 {
     position: absolute;
@@ -691,10 +691,7 @@ a, a:focus {
 }
 
 .prose-box input[type="text"] {
-    width: 230px;
-    height: 34px;
-    border: 1px solid #bebebe;
-    text-indent: 10px;
+    border: 1px solid #d8d8d8;
     border-radius: 4px;
 }
 
@@ -712,8 +709,8 @@ a, a:focus {
 }
 
 .product-list .col-xs-4 {
-    margin-top: 25px;
-    height: 150px;
+    margin-top: 20px;
+    border-right: 1px solid #d8d8d8;
 }
 
 .product-list .product-left {
@@ -784,7 +781,7 @@ a, a:focus {
 
 .product-list .product-right {
     font-family: 'SimSun';
-    margin-left: 70px;
+    padding: 0 10px 0 20px;
 }
 
 .product-right h4 {
@@ -1685,8 +1682,8 @@ a, a:focus {
     width: 48px;
     height: 48px;
     float: left;
-    position: relative;
-    behavior: url(css/PIE.htc);
+    /*position: relative;
+    behavior: url(css/PIE.htc);*/
 }
 
 .scheme-icon li p {
@@ -2192,7 +2189,7 @@ a, a:focus {
 .honor-main ul li img {
     width: 184px;
     height: 152px;
-    border: 10px solid #cfcfcf;
+    border: 5px solid #cfcfcf;
 }
 
 .honor-main ul li p {
@@ -2702,8 +2699,8 @@ a, a:focus {
     border-radius: 13px;
     border: 1px solid #272636;
     background-color: #ffffff;
-    position: relative;
-    behavior: url(/css/PIE.htc);
+    /*position: relative;
+    behavior: url(/css/PIE.htc);*/
 }
 
 .particular li a span b {
@@ -2713,8 +2710,8 @@ a, a:focus {
     border-radius: 8px;
     margin-top: 4px;
     background-color: #ffffff;
-    position: relative;
-    behavior: url(/css/PIE.htc);
+    /*position: relative;
+    behavior: url(/css/PIE.htc);*/
 }
 
 .particular li a i {
@@ -3925,4 +3922,87 @@ ul.newplan-layout li{
     margin-left: 20px;
     margin-bottom: 0;
     background: url("../images/allicon.png") -728px -465px no-repeat;
+}
+.product-left-box{
+    width: 215px;
+    margin-right: 16px;
+    float: left;
+}
+.product-left-box img{
+    width: 100%;
+}
+.pro-select{
+    margin: 5px 0;
+    padding: 0;
+    border: 1px solid #d8d8d8;
+}
+.pro-select li{
+    list-style: none;
+    line-height: 42px;
+    height: 42px;
+    background: url("../images/proitembg.png") repeat-x;
+    border-top: 1px solid #d8d8d8;
+    width: 100%;
+}
+.pro-select li:first-child{
+    border-top: none;
+}
+.pro-select li a{
+    display: block;
+    font-size: 14px;
+    font-family: SimSun;
+    text-indent: 18px;
+    background-color: transparent;
+    color: #303030;
+}
+.pro-select li a em{
+    display: none;
+    float: right;
+    width: 36px;
+    height: 42px;
+    background: url("../images/allicon.png") -560px -688px no-repeat;
+}
+.pro-select li a:hover{
+    background-color: #656565;
+    color: #ffffff;
+    text-decoration: none;
+}
+.pro-select li a:hover em{
+    display: block;
+}
+.pro-search-box{
+    position: relative;
+}
+.pro-search-box input[type="text"]{
+
+}
+.pro-search-box input[type="button"]{
+
+}
+.product-right-box{
+    overflow: hidden;
+    border: 1px solid #d8d8d8;
+}
+.title-ify{
+    background: url("../images/proitembg.png") repeat-x;
+    width: 100%;
+    font-family: SimSun;
+    line-height: 42px;
+
+}
+.title-ify span{
+    color: #323232;
+    font-weight: bold;
+    margin-left: 14px;
+}
+.title-ify a{
+    color: #323232;
+    padding: 0 6px 6px;
+    border-bottom: 1px solid transparent;
+    margin: 0 7px;
+}
+.title-ify a:hover{
+    border-bottom: 1px solid #2972ca;
+    color: #2972ca;
+    text-decoration: none;
 }
